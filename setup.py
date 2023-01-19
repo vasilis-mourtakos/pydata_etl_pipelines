@@ -1,0 +1,37 @@
+from setuptools import setup, find_packages
+
+setup(
+    name='etl_pipelines',
+    version='1.0.0',
+    description='A package for building ETL pipelines',
+    author='Vasilis Mourtakos',
+    author_email='johndoe@example.com',
+    url='https://github.com/vasilis-mourtakos/pydata_etl_pipeline',
+    packages=['etl_pipelines'],
+    install_requires=[
+        'numpy',
+        'looker-sdk==21.8.1',
+        'pandas==1.1.4',
+        'SharePlum==0.5.1',
+        'google-api-core==2.8.2',
+        'google-api-python-client==2.52.0',
+        'google-auth==2.6.0',
+        'google-auth-httplib2==0.1.0',
+        'google-auth-oauthlib==0.4.6',
+        'google-cloud-appengine-logging==1.1.1',
+        'google-cloud-audit-log==0.2.0',
+        'google-cloud-bigquery==2.34.2',
+        'google-cloud-bigquery-storage==2.14.2',
+        'google-cloud-core==2.3.1',
+        'google-cloud-logging==3.0.0',
+        'google-cloud-secret-manager==2.9.1',
+        'google-cloud-storage==2.4.0',
+        'cloud-sql-python-connector==0.9.3',
+        'openpyxl',
+        'office365',
+        'office365-rest-client',
+        'SQLAlchemy==1.4.44',
+        'pg8000==1.29.3',
+        'matterhook==0.2'
+    ],
+)
